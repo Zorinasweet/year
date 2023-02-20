@@ -31,7 +31,7 @@ response = requests.request('POST', URL, params=params).json()
 print(response)
 
 opener = urllib.request.URLopener()
-
+print('hi')
 opener.addheader('User-Agent', userAgent)
 
 filename, headers = opener.retrieve(response['data']['url'], images[id-1]['name']+'.jpg')
